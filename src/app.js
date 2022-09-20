@@ -10,13 +10,7 @@ export default class App extends LightningElement {
       phone: ''
     };
 
-    /**
-     * Operador Spread ->>> Espalhamento
-     * Expandir valores de um array ou object dentro de outro
-     */
-
-    array = [1,2,3];
-    new = [];
+    result;
 
     handleInputChange(event){
       // console.log("valor do campo: " + event.detail.value);
@@ -33,10 +27,9 @@ export default class App extends LightningElement {
       console.log(this.inputs);
     }
 
-    onSpread(){
-      this.new = [4,5,6,this.array];
-      console.log(this.new);
-      this.new = [4,5,6, ...this.array];
-      console.log(this.new);
+    handleOnClick(){
+      this.result = `Nome: ${this.inputs.firstName} ${this.inputs.lastName}, Telefone: ${this.inputs.phone}`;
     }
+
+    
 }
