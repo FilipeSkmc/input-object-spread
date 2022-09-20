@@ -1,0 +1,13 @@
+<template>
+  <lightning-card title="Formulário">
+    <div class="slds-m-around_medium">
+      <!-- o name do campo deve ser igual a key lááááá do outro lado  -->
+      <lightning-input type="text" name="firstName" label="Primeiro Nome:" onchange={handleInputChange}>
+      </lightning-input>
+      <lightning-input type="text" name="lastName" label="Sobrenome:" onchange={handleInputChange}></lightning-input>
+      <lightning-input type="phone" name="phone" label="Telefone:" onchange={handleInputChange}></lightning-input>
+
+      <lightning-button label="Clica Aqui" variant="brand" onclick={onSpread}></lightning-button>
+    </div>
+  </lightning-card>
+</template>
